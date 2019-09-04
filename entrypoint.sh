@@ -6,7 +6,7 @@ do
    I=$(shuf -i 1-4 -n 1)
    D=`date -Iseconds`
    case "$I" in
-      "1") echo "$D ERROR An error is usually an exception that has been caught and not handled."
+      "1") >&2 echo "$D ERROR An error is usually an exception that has been caught and not handled."
       ;;
       "2") echo "$D INFO This is less important than debug log and is often used to provide context in the current task."
       ;;
